@@ -5,8 +5,6 @@ import PrivateRoute from "./utils/PrivateRoute";
 import Layout from "./components/Layout/Layout";
 import Forbidden from "./pages/Forbidden/Forbidden";
 import React from "react";
-import { useDispatch } from "react-redux";
-import { changeAccess } from "./store/floorreducer";
 
 
 function App() {

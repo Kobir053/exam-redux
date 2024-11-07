@@ -14,12 +14,12 @@ const PrivateRoute: React.FC<IPrivateRoute> = ({children}: IPrivateRoute) => {
     const nev = useNavigate();
 
     useEffect(() => {
+        
         if(!floorAccess[+index!]){
             console.log(`access: ${floorAccess[+index!]} floorArr: ${floorAccess}`);
             nev("/forbidden");
-            return;
         }
-    }, [])
+    }, [index])
 
     return (
         <div>

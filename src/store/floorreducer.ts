@@ -5,7 +5,7 @@ interface FloorStateType{
 }
 
 const initialState : FloorStateType = {
-        floorAccess: [true, false, false, false, false],
+        floorAccess: [false, false, false, false, false],
 };
 
 export const floorSlice = createSlice({
